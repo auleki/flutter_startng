@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'screens/login_screen.dart';
+import 'screens/login_screen.dart';
 import 'screens/signUp_screen.dart';
 
 
@@ -11,8 +11,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'AuKoda Test App',
       debugShowCheckedModeBanner: false,
-      // home: LoginScreen(),
-      home: RegisterScreen()
+      home: LoginScreen(),
+      // home: RegisterScreen()
     );
   }
 }

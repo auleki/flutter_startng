@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../utilities/constants.dart';
+import './signUp_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -145,7 +146,11 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget _buildSignUpBtn() {
     return Center(
         child: FlatButton(
-      onPressed: () => print("Redirect to Sign up page"),
+      onPressed: (){
+        Navigator.push(context, MaterialPageRoute(
+          builder: (context) => RegisterScreen()
+        ));
+      },
       child: Text(
         'Join the revolution! Sign up now',
         style: auLabelStyle,

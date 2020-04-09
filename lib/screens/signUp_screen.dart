@@ -140,7 +140,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
   Widget _buildLoginBtn() {
     return Center(
         child: FlatButton(
-      onPressed: () => print("Redirect to Sign up page"),
+      onPressed: () {
+        Navigator.pop(context);
+      },
       child: Text(
         'Already have an account? Login',
         style: auLabelStyle,
