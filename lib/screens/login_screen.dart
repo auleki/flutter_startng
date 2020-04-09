@@ -84,7 +84,7 @@ class _LoginScreenState extends State<LoginScreen> {
         onPressed: () => print('Forgot password button pressed'),
         padding: EdgeInsets.only(right: 0.0),
         child: Text(
-          'Forgot password ?',
+          'Forgot password?',
           style: auLabelStyle,
         ),
       ),
